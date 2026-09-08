@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Visionários - Jéssica Meira</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2, h3 {
+            margin: 0;
+        }
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            height: 100vh;
+        }
+        .hero-left {
+            width: 50%;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 40px;
+        }
+        .hero-title {
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 20px;
+        }
+        .hero-subtitle {
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+        .hero-presentation {
+            font-size: 18px;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+        .authority-highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            width: calc(50% - 10px);
+        }
+        .icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #D4AF37;
+            border-radius: 50%;
+            color: #D4AF37;
+        }
+        .highlight-item p {
+            margin: 0;
+            font-size: 14px;
+        }
+        .hero-right {
+            width: 50%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .author-photo {
+            max-width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .btn-cta {
+            display: inline-block;
+            background-color: #D4AF37;
+            color: #000;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 15px 40px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn-cta:hover {
+            background-color: #f1c40f;
+        }
+        .info-bar {
+            background-color: #1a1a1a;
+            padding: 30px 0;
+            border-bottom: 2px solid #D4AF37;
+        }
+        .info-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .info-item h4 {
+            color: #D4AF37;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        .info-item p {
+            font-size: 18px;
+            margin: 0;
+        }
+        .info-badge {
+            border: 2px solid #D4AF37;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #D4AF37;
+            font-weight: 700;
+        }
+        .about {
+            padding: 80px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .about-text {
+            width: 60%;
+        }
+        .about-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #D4AF37;
+        }
+        .about-text p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .about-purpose h4 {
+            color: #D4AF37;
+            margin-bottom: 10px;
+        }
+        .about-image {
+            width: 30%;
+        }
+        .solutions {
+            padding: 80px 0;
+            background-color: #1a1a1a;
+        }
+        .solutions h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 60px;
+            color: #D4AF37;
+        }
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+        .solution-card {
+            text-align: center;
+            border: 1px solid #D4AF37;
+            padding: 40px;
+            border-radius: 10px;
+            background-color: #000;
+        }
+        .solution-icon {
+            font-size: 40px;
+            color: #D4AF37;
+            margin-bottom: 20px;
+        }
+        .solution-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .solution-card p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .footer {
+            padding: 60px 0;
+            text-align: center;
+            background-color: #000;
+            border-top: 2px solid #D4AF37;
+        }
+        .footer-call {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="hero-left">
+            <img src="Imagens/8763252F-7EEF-40E1-A8D4-FF34F281258A.PNG" alt="Workshop Visionários" class="hero-title">
+            <p class="hero-subtitle">Primeiros passos para você que quer ingressar na carreira.</p>
+            <p class="hero-presentation">Com Jéssica Meira | Publicitária Visionária</p>
+            
+            <div class="authority-highlights">
+                <div class="highlight-item">
+                    <span class="icon">✈️</span>
+                    <p>Experiência Internacional: Projetos e consultorias em 5 países.</p>
+                </div>
+                <div class="highlight-item">
+                    <span class="icon">🌎</span>
+                    <p>Cobertura Internacional: Atuação direta em eventos globais.</p>
+                </div>
+                <div class="highlight-item">
+                    <span class="icon">🎤</span>
+                    <p>Grandes Eventos: Experiência para eventos de 5.000+ pessoas.</p>
+                </div>
+                <div class="highlight-item">
+                    <span class="icon">🚀</span>
+                    <p>Linha de Frente: Gestão de marketing para grandes empresas.</p>
+                </div>
+            </div>
+
+            <a href="#" class="btn-cta">INSCREVA-SE AGORA</a>
+        </div>
+        <div class="hero-right">
+            <img src="Imagens/55D65D73-DFF0-4FA6-ACCB-BFF2AE8F7280 2.PNG" alt="Jéssica Meira" class="author-photo">
+        </div>
+    </section>
+
+    <div class="info-bar">
+        <div class="container">
+            <div class="info-item">
+                <h4>Data</h4>
+                <p>05 de Outubro</p>
+            </div>
+            <div class="info-item">
+                <h4>Horário</h4>
+                <p>Às 19 horas</p>
+            </div>
+            <div class="info-item">
+                <h4>Local</h4>
+                <p>Rua Espírito Santo, 1.204 – Lourdes | "Instituto Plenum Brasil"</p>
+            </div>
+            <div class="info-badge">Oportunidade Única</div>
+        </div>
+    </div>
+
+    <section class="about container">
+        <div class="about-text">
+            <h2 class="about-title">SOBRE JÉSSICA</h2>
+            <p>Fundadora da agência A Visão Digital, Jéssica soma 7 anos de mercado transformando marcas, liderando estratégias de marketing e posicionando profissionais no topo de suas carreiras.</p>
+            <div class="about-purpose">
+                <h4>Propósito:</h4>
+                <p>Mostrar os bastidores práticos e os primeiros passos reais para quem deseja construir autoridade e resultados consolidados.</p>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="path/to/jessica-about-photo.png" alt="Sobre Jéssica" style="max-width:100%;">
+        </div>
+    </section>
+
+    <section class="solutions">
+        <div class="container">
+            <h2>Como Podemos Te Ajudar</h2>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-icon">💡</div>
+                    <h3>Consultoria</h3>
+                    <p>Diagnóstico estratégico e direcionamento direto para seu negócio ou carreira.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">👥</div>
+                    <h3>Mentoria</h3>
+                    <p>Acompanhamento prático para construção de posicionamento e autoridade no mercado.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">🎓</div>
+                    <h3>Treinamento</h3>
+                    <p>Capacitação técnica e executiva para equipes, empresas e profissionais liberais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-call">Prepare-se para o próximo nível.</p>
+            <a href="#" class="btn-cta">GARANTIR MINHA VAGA</a>
+        </div>
+    </footer>
+
+</body>
+</html>
